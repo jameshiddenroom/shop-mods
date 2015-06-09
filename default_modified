@@ -1437,7 +1437,7 @@ ul#desktopMenu {
 }
 
 aside {
-	display: none !important;
+	display: block;
 }
 #mainContent {
 	display: block;
@@ -1670,10 +1670,23 @@ body {
 	padding: 0 20px;
 }
 #leftBar {
-    display: none !important;
+    display: block;
 }
 #rightBar {
     display: none;
 }
 
+}
+
+#subcategoriesBlock {
+  text-align: center;
+}
+
+.sub-categories {
+  padding: 3px;
+  margin-top: 0px;
+}
+
+.sub-categories .name {
+  line-height: normal;
 }
