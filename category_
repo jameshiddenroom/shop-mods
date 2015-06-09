@@ -7,28 +7,7 @@
     <!--START: CATEGORY_HEADER-->
     <div class="category-header" id="categoryHeader">[CONTENT]</div>
     <!--END: CATEGORY_HEADER--> 
-    <!--START: SUB_CATEGORIES-->
-    <div id="subcategoriesBlock">
-        <div class="titles">[category_Header-subcategories]</div>
-        <div class="sub-categories-format">
-        <!--START: SUB_CATEGORIES_FORMAT-->
-        <li>
-        <div class="sub-categories">
-              <a href="view_category.asp?cat=[CATID]">
-              <!--START: SUB_CATEGORY_IMAGE-->
-              <span class="img"><img src="[SUB_CATEGORY_IMAGE]" alt="[SUB_CATEGORY_NAME]" /></span>
-              <!--END: SUB_CATEGORY_IMAGE--> 
-              <!--START: SUB_CATEGORY_NAME-->
-              <span class="name">[SUB_CATEGORY_NAME]</span>
-              <!--START: SUB_CATEGORY_NAME--></a>
-              <div class="desc">[SUB_CATEGORY_DESCRIPTION]</div>
-            </div>
-        </li>
-        <!--END: SUB_CATEGORIES_FORMAT-->
-        </div>
-    </div>
-        <div class="clear"></div>
-    <!--END: SUB_CATEGORIES--> 
+
     <!--START: FEATURE_MENU-->
     <div id="featureBlock">
       <div class="titles">[category_Header-specials]</div>
