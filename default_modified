@@ -82,10 +82,12 @@ div.searchlight-results-wrapper {
 }
 /*store-slogan:: Store Slogan.*/		 
 .store-slogan {
-    font-family: 'Roboto Slab', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	text-transform: lowercase;
+
+font-family: 'Roboto Slab', sans-serif;
+font-size: 14px;
+font-weight: 400;
+text-transform: ;
+
 }
 /*frame:: Controls the left and right column background.*/		
 .frame {
