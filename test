@@ -96,7 +96,7 @@
 
 			// Prevent storing a cookie that we couldn't decode.
 			if (!key && (cookie = read(cookie)) !== undefined) {
-				resultTest red wine = cookie;
+				result[name] = cookie;
 			}
 		}
 
