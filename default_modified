@@ -1158,6 +1158,7 @@ footer .col3 {
 	--------------------------	*/
 #listing0 h1 {
     font-size: 18px;
+margin: 0;
 }
 
 ul#desktopMenu {
@@ -1654,6 +1655,11 @@ footer .col3 {
 	transition: all 0.3s ease;
 }
 
+}
+
+.titlesubhead {
+font-style: italic;
+margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 980px) {
