@@ -1718,7 +1718,7 @@ body {
 	border:4px solid #444;
 	font-size: 12px;
 	width:290px;
-	height: 290px;
+	height: 260px;
 	font:normal 15px/1.3em Helvetica,arial,sans-serif;
 	
 	-webkit-box-sizing: border-box;
@@ -1769,7 +1769,7 @@ body {
 	text-decoration: none;
 	padding:1em;
 	color: #fff;
-margin: auto;
+	margin: auto;
 }
 
 #modal_content nav .av_go {
@@ -1792,19 +1792,11 @@ margin: auto;
 
 .agetable {
 	text-align: right;
-	margin: auto;
+	width: 55%;
+	min-width: 200px;
 }
 
-.agetable tr {
-display: table-row;
-}
 
-.agetable td {
-display: table-cell;
-	font:normal 16px Helvetica,arial,sans-serif;
-	padding: 1px;
-text-align: right;
-}
 
 @media (min-width: 688px) {
 	#modal_content {
@@ -1813,7 +1805,7 @@ text-align: right;
 		left: 30vw;
 		width: 90%;
 		max-width: 550px;
-		height:400px;
+		height:350px;
 		padding:2em;
 		border-radius: 10px;
 		background-position: center 3em;
@@ -1838,9 +1830,12 @@ text-align: right;
 
 
 	#modal_content nav a.av_btn {
-		padding:1em 2.5em;
-		margin:1.6em auto 0;
+		padding: 1em 2.5em;
 		font-size: 1em;
-box-sizing: content-box;
+	}
+	
+	.agetable {
+		margin: 0 0 0 0;
+		line-height: 30px;
 	}
 }
