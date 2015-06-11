@@ -383,10 +383,9 @@
 		<!--END: freeshippingblock-->
 		<div class="clear"></div>
 	  </div>
-	  <!--START: id-->
-		<div class="product-id">[product_id]:<span id="product_id">[id]</span></div>
-		<div class="clear"></div>
-	  <!--END: id-->
+			<!--START: extra_field_6-->
+			[extra_field_6]
+			<!--END: extra_field_6-->
 	  <!--START: PRODUCT_FEATURES_BLOCK-->
 	  <div class="productFeaturesBlock"> 
 		<ul>
@@ -910,10 +909,6 @@
 			<li><a href="#tab-3">[productqa_header]</a></li>
 			<script type="text/javascript">jQuery('#tab-3').show();</script>
 			<!--END: qa-->
-			<!--START: extra_field_6-->
-			<li><a href="#tab-4">[product_extrafield6]</a></li>
-			<script type="text/javascript">jQuery('#tab-4').show();</script>
-			<!--END: extra_field_6-->
 			<!--START: extra_field_7-->
 			<li><a href="#tab-5">[product_extrafield7]</a></li>
 			<script type="text/javascript">jQuery('#tab-5').show();</script>
@@ -1045,7 +1040,6 @@
 		</div>
 		</div>
 		<div id="tab-4" style="display: none;">
-			<div class="info">[extra_field_6]</div>
 		</div>
 		<div id="tab-5" style="display: none;">
 			<div class="info">[extra_field_7]</div>
