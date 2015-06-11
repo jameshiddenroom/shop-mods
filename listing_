@@ -278,6 +278,9 @@
 	</div>
 	<div class="secondary">
 	<h1 itemprop="name" class="page_headers">[name]</h1>
+		  <!--START: extra_field_1-->
+			<div class="titlesubhead">[extra_field_1]</div>
+		  <!--END: extra_field_1--> 
 	  <!--START: totalrating-->
 		<div class="totalrating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
 			<div class="stars">[totalrating]</div>
@@ -864,13 +867,6 @@
 	  <div class="clear"></div>
 	  <!--START: extrafields-->
 		<div class="extrafieldsBlock"> 
-		  <!--START: extra_field_1-->
-		  <div class="extra_field">
-			<h4>[product_extrafield1]</h4>
-			<div class="info">[extra_field_1]</div>
-			<div class="clear"></div>
-		  </div>
-		  <!--END: extra_field_1--> 
 		  <!--START: extra_field_2-->
 		  <div class="extra_field">
 			<h4>[product_extrafield2]</h4>
