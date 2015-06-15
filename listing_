@@ -360,7 +360,7 @@
 		<h3 class="hidden">[product_Header-price]</h3>
 		<div class="clear"></div>
 		<!--START: price2-->
-		<div class="retailprice">Regular Price <span>[price2]</span></div>
+		<div class="retailprice">Usual Price <span>[price2]</span></div>
 		<!--START: SAVINGS-->
 		<div class="savings">[product_savings]<span>[savings]</span><span>([savings_percentage]%)</span></div>
 		<!--END: SAVINGS--> 
@@ -1090,7 +1090,11 @@
 			<!--END: product_review_average--> 
 			<!--END: product_review-->
 			</div>
-			<div class="price"><!--START: ITEMPRICE--> 
+			<div class="price">
+<!--START: price2-->
+		<div class="retailprice">Usual Price: <span>[price2]</span></div>
+		<!--END: price2-->
+<!--START: ITEMPRICE--> 
 			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
 			<!--END: ITEMPRICE--> 
 			<!--START: SALEPRICE-->
