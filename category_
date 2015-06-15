@@ -26,7 +26,7 @@
             </div>
             <div class="price">
 		<!--START: price2-->
-		<div class="retailprice">Usual Price: <span>[price2]</span></div>
+		<div class="retailprice">Normal Price: <span>[price2]</span></div>
 		<!--END: price2-->
 
 <!--START: ITEMPRICE--> 
@@ -238,7 +238,7 @@
             </div>
             <div class="price">
 		<!--START: price2-->
-		<div class="retailprice">Usual Price: <span>[price2]</span></div>
+		<div class="retailprice">Normal Price: <span>[price2]</span></div>
 		<!--END: price2-->
 
 <!--START: ITEMPRICE--> 
