@@ -284,6 +284,9 @@
 		  <!--START: extra_field_2-->
 			<div class="info">[extra_field_2]</div>
 		  <!--END: extra_field_2--> 
+		  <!--START: extra_field_3-->
+			<div class="info">[extra_field_3]</div>
+		  <!--END: extra_field_3--> 
 
 	  <!--START: totalrating-->
 		<div class="totalrating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
@@ -870,13 +873,6 @@
 	  <div class="clear"></div>
 	  <!--START: extrafields-->
 		<div class="extrafieldsBlock"> 
-		  <!--START: extra_field_3-->
-		  <div class="extra_field">
-			<h4>[product_extrafield3]</h4>
-			<div class="info">[extra_field_3]</div>
-			<div class="clear"></div>
-		  </div>
-		  <!--END: extra_field_3--> 
 		  <!--START: extra_field_4-->
 		  <div class="extra_field">
 			<h4>[product_extrafield4]</h4>
