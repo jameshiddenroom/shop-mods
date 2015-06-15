@@ -9,7 +9,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #231f20;
-	background: #FFF;
+	background: #E6E6E6;
 	font-weight: 400;
 	padding: 0;
 	margin: 0;
@@ -265,9 +265,8 @@ A.subcat:visited:hover {
 /*A:menu:: Controls the way the Links display in the top navigation before a user clicks or mouses over on them.*/ 	 
 A.menu {
 	color: #FFF;
-	font-size: 12px;
+	font-size: 14px;
 	font-style: normal;
-	font-weight: 400;
 	text-decoration: none;
 	text-transform: none;
 }
@@ -279,9 +278,7 @@ A.menu:hover {
 /*A:menu:over:: After a user has visited that section.*/ 	
 A.menu:visited {
 	color: #FFF;
-	font-size: 12px;
 	font-style: normal;
-	font-weight: 400;
 	text-decoration: none;
 	text-transform: none;
 }
@@ -1696,6 +1693,55 @@ body {
 .sub-categories .name {
   line-height: normal;
 }
+
+.retailprice {
+text-decoration: line-through;
+color: #FF0000;
+font-weight: normal;
+}
+
+.product-item {
+background: #E6E6E6;
+}
+
+.product-item .img {
+background: #FFF;
+border: 1px solid #A1A1A1;
+}
+
+.product-item .name {
+text-align: center;
+min-height: 120px;
+margin: 0;
+}
+
+.product-item .name A {
+font-weight: bold;
+font-size: 15px;
+color: #666;
+}
+
+.product-item .price {
+text-align: center;
+font-size: 19px;
+font-weight: 300;
+color: #666;
+padding-top: 8px;
+}
+
+.product-item .retailprice {
+font-size: 14px;
+}
+
+.product-item .action {
+text-align: center;
+}
+
+.product-item .action A {
+color: #666;
+}
+
+
 
 /*!
  * Age verification CSS to go with the JS that can be found at (https://github.com/Herudea/age-verification)
