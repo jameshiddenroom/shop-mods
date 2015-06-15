@@ -24,7 +24,12 @@
             <!--END: product_review_average--> 
             <!--END: product_review-->
             </div>
-            <div class="price"><!--START: ITEMPRICE--> 
+            <div class="price">
+		<!--START: price2-->
+		<div class="retailprice">Regular Price: <span>[price2]</span></div>
+		<!--END: price2-->
+
+<!--START: ITEMPRICE--> 
             <span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
             <!--END: ITEMPRICE--> 
             <!--START: SALEPRICE-->
