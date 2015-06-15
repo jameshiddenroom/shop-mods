@@ -34,6 +34,111 @@
         document.write("<script type=\"text/javascript\" src=\"/assets/templates/common-html5/js/jquery.min.js\"></" + "script>");
     }
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script type="text/javascript">
+/*!
+ * Age check originally based on
+ * Simple Age Verification (https://github.com/Herudea/age-verification))
+ */
+//if (jQuery.cookie) { alert("yes"); } else { alert("no"); }
+var modal_content,
+modal_screen;
+//jQuery.cookie('age_checked', false);
+
+jQuery(document).ready(function() {
+	av_legality_check();
+});
+
+
+av_legality_check = function() {
+	if (jQuery.cookie('age_checked') == "yes") {
+		//alert("checked age is valid");
+	} else {
+		av_showmodal();
+
+		// Make sure the prompt stays in the middle.
+		jQuery(window).on('resize', av_positionPrompt);
+	}
+};
+
+av_showmodal = function() {
+	modal_screen = jQuery('<div id="modal_screen"></div>');
+	modal_content = jQuery('<div id="modal_content" style="display:none"></div>');
+	var modal_content_wrapper = jQuery('<div id="modal_content_wrapper" class="content_wrapper"></div>');
+	var modal_regret_wrapper = jQuery('<div id="modal_regret_wrapper" class="content_wrapper" style="display:none;"></div>');
+
+	var question = jQuery('<h2>To view this site you must be of legal drinking age in Singapore</h2><p>Are you 18 years of age or older?<br /><br /><a href="#" class="agebtn yesbtn" id="yesbtn" rel="yes">YES</a> <a href="#" class="agebtn nobtn" id="nobtn" rel="no">NO</a><br /><br /><input type="checkbox" id="dobrem"> Remember me</p>');
+	
+	var failed = jQuery('<h2>We\'re Sorry!</h2><p>You must be 18 years of age or older to view this site.</p>');
+
+	modal_content_wrapper.append(question);
+	modal_regret_wrapper.append(failed);
+	modal_content.append(modal_content_wrapper, modal_regret_wrapper);
+
+	// Append the prompt to the end of the document
+	jQuery('body').append(modal_screen, modal_content);
+
+	// Center the box
+	av_positionPrompt();
+
+	modal_content.find('a.agebtn').on('click', av_setCookie);
+};
+
+av_setCookie = function(e) {
+	e.preventDefault();
+	
+	/*
+	var dob = new Date(parseInt(jQuery("#dobyear").val()), parseInt(jQuery("#dobmonth").val())-1, parseInt(jQuery("#dobday").val()));
+	var minage = new Date();
+	minage.setFullYear(minage.getFullYear()-18);
+	
+	var age_valid = 'no';
+	if (jQuery(e.currentTarget).attr('rel') && dob.getTime() < minage.getTime()) {
+		age_valid = 'yes';
+	}
+	*/
+
+	var is_legal = $(e.currentTarget).attr('rel');
+	
+	//if (age_valid == "yes") {
+	//if (jQuery("#agecheck").is(':checked')) {
+	if (is_legal == "yes") {
+		if (jQuery("#dobrem").is(':checked')) {
+			jQuery.cookie('age_checked', 'yes', { expires: 30, path: '/' } );
+		} else {
+			jQuery.cookie('age_checked', 'yes');
+		}
+		av_closeModal();
+		jQuery(window).off('resize');
+	} else {
+		av_showRegret();
+	}
+};
+
+av_closeModal = function() {
+	modal_content.fadeOut();
+	modal_screen.fadeOut();
+};
+
+av_showRegret = function() {
+	modal_screen.addClass('failed');
+	modal_content.find('#modal_content_wrapper').hide();
+	modal_content.find('#modal_regret_wrapper').show();
+};
+
+av_positionPrompt = function() {
+	var top = (jQuery(window).outerHeight() - jQuery('#modal_content').outerHeight()) / 2;
+	var left = (jQuery(window).outerWidth() - jQuery('#modal_content').outerWidth()) / 2;
+	modal_content.css({
+		'top': top,
+		'left': left
+	});
+
+	if (modal_content.is(':hidden') && (jQuery.cookie('age_checked') != "yes")) {
+		modal_content.fadeIn('slow')
+	}
+};
+</script>
 </head><body>
 <div id="mainContainer">
   <div class="top-menu">
@@ -384,5 +489,18 @@ document.write('<img src="' + file + '?'+info+ '" width="1" height="1" border="0
   </noscript>
   <!--END: 3dcart stats--> 
 </div>
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5350364935e4f191"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5
+    }   
+  });
+</script>
+<!-- AddThis Smart Layers END -->
 </body>
 </html>
