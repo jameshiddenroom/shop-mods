@@ -15,7 +15,7 @@
       <!--START: FEATURE_ITEM_TEMPLATE_0-->
           <div class="product-item item-template-0 alternative">
             <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
-            <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
+            <div class="name"><img src="/assets/images/feature.png"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
             <div class="stars">
             <!--START: product_review--> 
             <!--START: product_review_average-->
