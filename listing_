@@ -359,18 +359,18 @@
 		<link itemprop="availability" href="http://schema.org/[availability_itemprop]" />
 		<h3 class="hidden">[product_Header-price]</h3>
 		<div class="clear"></div>
+		<!--START: price2-->
+		<div class="retailprice">Regular Price <span>[price2]</span></div>
+		<!--START: SAVINGS-->
+		<div class="savings">[product_savings]<span>[savings]</span><span>([savings_percentage]%)</span></div>
+		<!--END: SAVINGS--> 
+		<!--END: price2--> 
 		<!--START: ITEMPRICE-->
 		<div class="yourprice price">[product_yourprice]<span itemprop="price" id="price">[price]</span></div>
 		<!--END: ITEMPRICE--> 
 		<!--START: SALEPRICE-->
 		<div class="saleprice price">[product_onsale]<span itemprop="price" id="price">[saleprice]</span></div>
 		<!--END: SALEPRICE-->
-		<!--START: price2-->
-		<div class="retailprice">[product_retailprice]<span>[price2]</span></div>
-		<!--START: SAVINGS-->
-		<div class="savings">[product_savings]<span>[savings]</span><span>([savings_percentage]%)</span></div>
-		<!--END: SAVINGS--> 
-		<!--END: price2--> 
 		<div class="clear"></div>
 	  </div>
 	  <!--END: pricing-->
