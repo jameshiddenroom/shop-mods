@@ -192,6 +192,8 @@
 	  Next</a></div>
 	<!--END: NEXT_PROD-->
 	<div class="clear"></div>
+
+<div style="border: 1px solid #A1A1A1; color: #666; background: #FFF; padding: 0px;">
 	<div class="primary">
 	  <div id="mediaContainer">
 		<div id="mediaBlock"> 
@@ -287,6 +289,8 @@
 		  <!--START: extra_field_3-->
 			<div class="info">[extra_field_3]</div>
 		  <!--END: extra_field_3--> 
+
+		<div class="item" itemprop="description">[extended_description]</div>
 
 	  <!--START: totalrating-->
 		<div class="totalrating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
@@ -891,12 +895,11 @@
 	  <!--END: extrafields--> 
 	</div>
 	<div class="clear"></div>
+</div>
+
 	<!--START: tabs-->
 	<div id="rTabs">
 		<ul>
-			<!--START: extended_description-->
-			<li><a href="#tab-1">[product_Header-description]</a></li>
-			<!--END: extended_description-->
 			<li id="reviewsTab" style="display:none;"><a href="#tab-2">[reviews_header]</a></li>
 			<!--START: qa-->
 			<li><a href="#tab-3">[productqa_header]</a></li>
@@ -931,9 +934,6 @@
 			<script type="text/javascript">jQuery('#tab-11').show();</script>
 			<!--END: extra_field_13-->
 		</ul>
-		<div id="tab-1">
-			<div class="item" itemprop="description">[extended_description]</div>
-		</div>
 		<!--START: reviews-->
 		<div id="tab-2">
 			<script type="text/javascript">
@@ -1076,32 +1076,35 @@
 	  </div>
 	  <!--START: related_items0-->
 		  <div class="product-item related_items0 alternative">
-			<div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
-			<div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
-			<div class="stars">
-			<!--START: product_review--> 
-			<!--START: product_review_average-->
-				<img src="assets/templates/common-html5/images/star[review_average].png" alt="Average Rating" /><span>([review_count])</span>
-				<div class="clear"></div>
-			<!--END: product_review_average--> 
-			<!--END: product_review-->
-			</div>
+	            <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
+	            <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a>
+			<div class="size">[extra_field_3]</div>
 			<div class="price">
-<!--START: price2-->
-		<div class="retailprice">Normal Price: <span>[price2]</span></div>
-		<!--END: price2-->
-<!--START: ITEMPRICE--> 
+			<!--START: price2-->
+			<div class="retailprice">Normal Price: [price2]</div>
+			<!--END: price2-->
+			<!--START: ITEMPRICE--> 
 			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
 			<!--END: ITEMPRICE--> 
 			<!--START: SALEPRICE-->
 			<del class="price2">[ITEMPRICE]&nbsp;</del>
 			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
 			<div class="on-sale">[product_sale]</div>
-			<!--END: SALEPRICE--></div>
-			<div class="status"><!--START: product_availability-->[availability] <!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock--></div>
-			<div class="action">
-				<input type="button" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="btn" onmouseover="this.className='btn_over'" onmouseout="this.className='btn'" />
+			<!--END: SALEPRICE-->
+			<!--START: product_availability--><div class="status">[availability] </div><!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock-->
 			</div>
+	            </div>
+	            <!--START: product_review--> 
+	            <div class="stars">
+	            <!--START: product_review_average-->
+	                <img src="assets/templates/common-html5/images/star[review_average].png" alt="Average Rating" /><span>([review_count])</span>
+	                <div class="clear"></div>
+	            <!--END: product_review_average--> 
+	            </div>
+	            <!--END: product_review-->
+	            <div class="action">
+			<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]">ADD TO CART</a> | <a href="product.asp?itemid=[catalogid]">DETAILS</a>
+	            </div>
 		<div class="clear"></div>
 		</div>
 	  <!--END: related_items0--> 
