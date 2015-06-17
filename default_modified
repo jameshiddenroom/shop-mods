@@ -6,7 +6,7 @@
 
 /*body:: Controls website background and any other text outside of a table without an associated style.*/ 	
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #231f20;
 	background: #E6E6E6;
@@ -400,8 +400,8 @@ td {
 /*page_headers:: Controls the title of all your pages.*/
 .page_headers {
 	font-size: 28px;
-	font-weight: 800;
-	color: #22303a;
+	font-weight: bold;
+	color: #888888;
 }
 /*titles:: Controls the Tiles  of sections within pages on the site such as (Specials, Feature Items, Items, Related Items).*/ 
 .titles {
@@ -510,9 +510,10 @@ A:visited:hover {
 }
 /*item:: Controls the item description and item details text.*/ 
 .item {
-	font-size: 12px;
-	color: #383733;
-	font-weight: 400;
+	font-size: 15px;
+	color: #222222;
+	font-weight: 300;
+        padding: 20px 20px 20px 0;
 }
 /*itemTitle:: Controls the name of the Product.*/ 
 .item-title {
@@ -840,6 +841,7 @@ li.m-search {
 header {
 	position: relative;
 	height: 108px;
+background: #fff;
 }
 header .wrapper {
 	height: 108px;
@@ -867,7 +869,7 @@ header .wrapper {
 	width: 55px;
 	height: 55px;
     line-height: 16px;
-    outline: 5px solid #FFF;
+    outline: 0px solid #FFF;
 	padding-top: 10px;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
@@ -889,6 +891,7 @@ nav#catNavMenu {
 	min-height: 30px;
 	line-height: 30px;
 	margin-bottom: 30px;
+background: #fff;
 }
 aside {
 	float: left;
@@ -1156,6 +1159,7 @@ footer .col3 {
 #listing0 h1 {
     font-size: 18px;
 margin: 0;
+color: #666;
 }
 
 ul#desktopMenu {
@@ -1711,12 +1715,17 @@ border: 1px solid #A1A1A1;
 
 .product-item .name {
 text-align: center;
-min-height: 120px;
+min-height: 100px;
 margin: 0;
 }
 
 .product-item .name A {
 font-weight: bold;
+font-size: 15px;
+color: #666;
+}
+
+.product-item .size {
 font-size: 15px;
 color: #666;
 }
@@ -1741,7 +1750,19 @@ text-align: center;
 color: #666;
 }
 
+.primary {
+padding-top: 20px;
+}
 
+.secondary {
+padding-top: 20px;
+}
+
+.secondary .info {
+padding-right: 10px;
+font-size: 13.5px;
+color: #222222;
+}
 
 /*!
  * Age verification CSS to go with the JS that can be found at (https://github.com/Herudea/age-verification)
