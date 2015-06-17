@@ -98,7 +98,7 @@ av_setCookie = function(e) {
 	}
 	*/
 
-	var is_legal = $(e.currentTarget).attr('rel');
+	var is_legal = jQuery(e.currentTarget).attr('rel');
 	
 	//if (age_valid == "yes") {
 	//if (jQuery("#agecheck").is(':checked')) {
